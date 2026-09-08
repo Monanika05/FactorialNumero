@@ -9,3 +9,17 @@ function factorial(n) {
 let numero = 5;
 
 console.log("El factorial de " + numero + " es: " + factorial(numero));
+
+
+
+function factorial2(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial2(n - 1);
+    }
+}
+
+let numero = 5;
+
+console.log("El factorial de " + numero + " es: " + factorial2(numero));
