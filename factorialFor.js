@@ -13,6 +13,7 @@ function factorial(n) {
 
     console.log("Factorial de " + n);
     console.log(serie + " = " + resultado);
+    console.log("ejemplo")
 }
 
 let numero = 5;
