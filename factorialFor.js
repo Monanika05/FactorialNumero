@@ -11,3 +11,6 @@ function factorial(n) {
 let numero = 5;
 
 console.log("El factorial de " + numero + " es: " + factorial(numero));
+console.log("Número ingresado: " + numero);
+console.log("El factorial de " + numero + " es: " + factorial(numero));
+console.log("Cálculo realizado correctamente.");
