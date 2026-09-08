@@ -1,16 +1,20 @@
 function factorial(n) {
     let resultado = 1;
+    let serie = "";
 
-    for (let i = 1; i <= n; i++) {
+    for (let i = n; i >= 1; i--) {
         resultado = resultado * i;
+        serie += i;
+
+        if (i > 1) {
+            serie += " × ";
+        }
     }
 
-    return resultado;
+    console.log("Factorial de " + n);
+    console.log(serie + " = " + resultado);
 }
 
 let numero = 5;
 
-console.log("El factorial de " + numero + " es: " + factorial(numero));
-console.log("Número ingresado: " + numero);
-console.log("El factorial de " + numero + " es: " + factorial(numero));
-console.log("Cálculo realizado correctamente.");
+factorial(numero);
